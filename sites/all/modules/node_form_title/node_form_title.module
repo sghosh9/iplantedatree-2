@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function node_form_title_form_alter(&$form, &$form_state, $form_id) {
+  switch($form_id) {
+    case 'i_wish_node_form':     
+			drupal_set_title(t('I wish to plant a tree'));
+			break;
+    case 'i_planted_node_form':
+			drupal_set_title(t('I planted a tree'));
+			break;
+  } 
+  return $form;	
+}
+
+/**
+ * Implementation of hook_user_view().
+ */
+function node_form_title_user_view($account, $view_mode, $langcode) {
+	if ($view_mode == 'full') {
+		$first_name = $account->field_first['und'][0]['value'];
+  	$last_name = $account->field_last['und'][0]['value'];
+  	drupal_set_title($first_name . ' ' . $last_name);
+	}
+}

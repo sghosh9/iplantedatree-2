@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/iplantedmytree.com/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>http://localhost/iplantedmytree.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost/iplantedmytree.com/i-planted</loc></url>
+<url><loc>http://localhost/iplantedmytree.com/i-wish</loc></url>
+<url><loc>http://localhost/iplantedmytree.com/node/5</loc></url>
+<url><loc>http://localhost/iplantedmytree.com/node/8</loc></url>
+</urlset>
