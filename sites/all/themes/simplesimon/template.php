@@ -169,3 +169,69 @@ function simplesimon_preprocess_user_profile(&$variables) {
   $variables['number_of_planted'] = $number_of_planted;
   
 }
+
+function simplesimon_system_powered_by() {
+  $image_path1=path_to_theme()."/images/drupal_favicon.png";
+  $image_path2=path_to_theme()."/images/innoraft.jpg";
+  
+  return '<span>' .
+ t(' Powered by <a href="@poweredby" target="_blank">Drupal</a>', array('@poweredby' => 'http://drupal.org')) . 
+'</span>
+ <span>
+<a href="http://drupal.org" target="_blank">
+<img src="' . $image_path1 . '" alt="IMAGE_DESCRIPTION"></a>.
+</span>
+<span>'.
+ t(' An <a href="@innoraft" target="_blank">
+<img src="' . $image_path2 . '" alt="IMAGE_DESCRIPTION"></a> Initiative.', array('@innoraft' => 'http://www.innoraft.com/')).
+'</span>' ;
+}
+
+
+
+/**
+ * Preprocess function for the thumbs_up template.
+ */
+
+function simplesimon_preprocess_rate_template_thumbs_up(&$variables, $node) {
+ extract($variables); 
+  //print $variables['content_id'];
+  if($variables['content_type'] == 'node') {
+    $result = db_query("SELECT type FROM {node} where nid='".$variables['content_id']."'");
+    foreach ($result as $record) {
+      if ($record->type=="i_planted") { 
+        $variables['up_button'] = theme('rate_button', array('text' => 'Thank.', 'href' => $links[0]['href'], 'class' => 'rate-thumbs-up-btn-up'));
+      }
+      else if ($record->type=="i_wish") { 
+        $variables['up_button'] = theme('rate_button', array('text' => 'Encourage!', 'href' => $links[0]['href'], 'class' => 'rate-thumbs-up-btn-up'));
+      }
+    }
+  }
+}
+
+/**
+ * rewrite of theme_field () of field.module to remove : from field label.
+ */
+
+function simplesimon_field ($variables) {
+	$output = '';
+	//Render the label if it is not hidden
+	if (!$variables['label_hidden']) {
+		$output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . '&nbsp;</div>'; 
+		//<-- Here's the colon to delete, it's attached to a space (&nbsp;)
+	}
+	
+	//Render the items
+	$output .= '<div class="field-items"' . $variables['content_attributes'] . '>';
+	foreach ($variables['items'] as $delta => $item) {
+    $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
+    $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
+  }
+  
+  $output .= '</div>';
+
+  // Render the top-level DIV.
+  $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
+
+  return $output;
+}

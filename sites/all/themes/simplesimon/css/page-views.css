@@ -1,0 +1,89 @@
+#content .view-i-wish,
+#content .view-i-planted, 
+#content .view-recent-stories,
+#content .view-most-encouraged {
+  position:relative;
+  top:15px;
+}
+
+#content .view-i-wish .views-field-picture img,
+#content .view-i-planted .views-field-picture img,
+#content .view-recent-stories .views-field-picture img, 
+#content .view-most-encouraged .views-field-picture img { 
+  height:90px;
+  width:70px;
+}
+
+#content .view-i-wish .views-field-title,
+#content .view-i-planted .views-field-title,
+#content .view-recent-stories .views-field-title,
+#content .view-most-encouraged .views-field-title {
+  position: relative;
+  top: -100px;
+  left: 80px;
+  font-style: italic;
+}
+
+#content .view-i-wish .rate-widget-2,
+#content .view-i-planted .rate-widget-1,
+#content .view-recent-stories .rate-widget-1,
+#content .view-most-encouraged .rate-widget-2 {
+  float:none;
+}
+#content .view-i-wish .views-field-value,
+#content .view-i-planted .views-field-value, 
+#content .view-recent-stories .views-field-value,
+#content .view-most-encouraged .views-field-value {
+  position: relative;
+  top: -24px;
+  left: 120px;
+  font-style: italic;
+}
+
+#content .view-i-wish .views-field-comments-link,#content .view-i-wish .views-field-comment-count,
+#content .view-i-planted .views-field-comments-link,#content .view-i-planted .views-field-comment-count, 
+#content .view-recent-stories .views-field-comments-link,#content .view-recent-stories .views-field-comment-count,
+#content .view-most-encouraged .views-field-comments-link,#content .view-most-encouraged .views-field-comment-count {
+  position: relative;
+  top: -16px;
+  left: 302px;
+}
+#content .view-i-wish .views-field-comment-count,#content .view-i-planted .views-field-comment-count,
+#content .view-recent-stories .views-field-comment-count,
+#content .view-most-encouraged .views-field-comment-count {
+  left: 334px;
+}
+#content .view-i-wish .views-field-comments-link,#content .view-i-planted .views-field-comments-link,
+#content .view-recent-stories .views-field-comments-link, 
+#content .view-most-encouraged .views-field-comments-link {
+  font-style:italic;
+}
+
+#content .view-content .view-field-title .field-content {
+	position:relative;
+	right:70px;
+}
+
+#content .view-content .views-field-value .field-content {
+	position:relative;
+	bottom:-30px;
+}
+
+#content .view-content div .views-field-value-1 .field-content .rate-widget-2 {
+	position:relative;
+	top:30px;
+	right:130px;
+}
+
+#content .view-content .views-field-value .field-content .rate-widget-2 {
+	position:absolute;
+	top:25px;
+	left:-120px;
+}
+
+#content .view-content .views-field-value-1 .field-content {
+	position:relative;
+	left:130px;
+	bottom:-3px;
+}
+

@@ -22,13 +22,13 @@
   float:right;
 }
 #main-links #block-block-7 .block-content {
-  background-image:url('images/front_page_add_story.png');
+  /*background-image:url('images/front_page_add_story.png')*/;
   background-repeat:no-repeat;
   background-position:50% 10%;
   height:100px;
 }
 #main-links #block-block-8 .block-content {
-  background-image:url('images/front_page_create_wish.png');
+  /*background-image:url('images/front_page_create_wish.png')*/;
   background-repeat:no-repeat;
   background-position:50% 10%;
   height:100px;
@@ -60,15 +60,15 @@
 
 #user-briefs, .rate-widget-1, .rate-widget-2 {
 	float:right;
-        margin-top:38px;
+  margin-top:-50px;
 }
-.rate-widget-2:after {
+/*.rate-widget-2:after {
 	content:" Encourage";
 }
 
 .rate-widget-1:after {
 	content:" Thank";
-}
+}*/
 #users-breifs .block-content img{
   border:1px solid black;
   height:75px;
@@ -85,16 +85,20 @@
 #users-breifs #block-views-stories-block .block-inner {
   border-left:1px dashed black;
 }
+
 #users-breifs .views-field-title a {
   float:right;
-  font-size:20px;
+  position:relative;
+  top:-82px;
+  left:65px;
+  font-size:16px;
 }
 
 
 /*Formatting content aside*/
 #proverb-for-site {
 	position:relative;
-	top:170px;
+	top:100px;
 }
 #proverb-for-site p {
   text-align:center;
@@ -113,7 +117,7 @@
 
 #links-main-sections {
 	position:relative;
-	top:120px;
+	top:100px;
 }
 
 #links-main-sections .block-content {
@@ -149,21 +153,21 @@
 
 #logo-front-page {
 	position:relative;
-	top:100px;
+	top:140px;
 }
 
 #site-name-front-page {
   white-space:nowrap;
   float:left;
   position:relative;
-  top:100px;
+  top:130px;
   margin-top:-1.6em;
   margin-left:3.3em;
   font-size:2em;
   text-decoration:none;
   
   background: #57f157;
-  padding: 1px 25px;
+  padding: 10px 35px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
 
@@ -221,5 +225,9 @@
   font-size:18px;
   color:#ffffff;
   font-weight:bold;
+}
+
+.views-slideshow-cycle-main-frame {
+	width:500px !important;
 }
 

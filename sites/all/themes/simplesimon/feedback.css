@@ -19,9 +19,9 @@
 
 #block-feedback-form {
   display: none;
-  position: fixed;
-  bottom: 60px;
-  right: 20px;
+  position: absolute;
+  top:855px;
+  right: 230px;
   overflow: hidden;
   z-index: 10;
 }

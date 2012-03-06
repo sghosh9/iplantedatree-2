@@ -24,6 +24,7 @@
   stylesheets[print][] = css/print.css
   stylesheets[all][] = /thumbs-up.css
   stylesheets[all][] = /feedback.css
+  stylesheets[all][] = css/page-views.css
 
   ; Disabled styles - un-comment if you need these.
   ;stylesheets[all][] = css/admin-section.css

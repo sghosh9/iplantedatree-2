@@ -46,7 +46,8 @@ input.form-text,
 textarea {
   border: 1px solid #ccc;
   height: auto;
-  padding: 2px;
+  padding: 5px;
+  width: 150px;
 }
 textarea,
 input {
@@ -163,6 +164,12 @@ fieldset#edit-advanced fieldset .fieldset-legend {
   margin: 0;
   padding: 0;
 }
+
+#user-login-form ul .rpx-links {
+	postion:relative;
+  left:20px;
+}
+
 #user-login-form li.openid-link,
 #user-login-form li.user-link {
   text-align: center;
@@ -228,3 +235,5 @@ fieldset .filter-help {
 #devel-switch-user-form {
   margin-bottom: 0;
 }
+
+

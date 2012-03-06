@@ -36,11 +36,16 @@
   letter-spacing:2px;
   font-weight:bold;
 }
+
+.sidebar .block-content #user-login-form a{
+	font-size:15px;
+}
+
 .region-sidebar-first  .block-content{
   position:fixed;
   left:0;
   width:25%;
-  background-image:url('images/add_wish_link_all_pages.png');
+  /*background-image:url('images/add_wish_link_all_pages.png');*/
   background-repeat:no-repeat;
   height:400px;
   background-position:50% 70%;
@@ -49,7 +54,7 @@
   position:fixed;
   right:0;
   width:25%;
-  background-image:url('images/add_story_link_all_pages.png');
+  /*background-image:url('images/add_story_link_all_pages.png');*/
   background-repeat:no-repeat;
   height:400px;
   background-position:50% 70%;
@@ -123,4 +128,15 @@
 /* Reset block ul in the dashboard */
 #dashboard .block ul {
   margin-left: 0;
+}
+
+#block-menu-menu-logout li, #block-menu-menu-login li {
+	display:inline;
+	position:relative;
+	bottom:67px;
+}
+
+#block-menu-menu-about-us li {
+	position:relative;
+	right:120px;
 }

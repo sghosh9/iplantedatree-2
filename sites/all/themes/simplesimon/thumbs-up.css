@@ -10,11 +10,11 @@
   background: url(../images/after_click_leaf.png) no-repeat 0 0;
 }
 
-.rate-thumbs-up-btn-up:active {
+.rate-thumbs-up-btn-up a.active {
   background: url(../images/after_click_leaf.png) no-repeat 0 0;
 }
 
-.rate-thumbs-up-btn-up.active-trail {
+.rate-thumbs-up-btn-up a.active-trail {
   background: url(../images/after_click_leaf.png) no-repeat 0 0;
 }
 
