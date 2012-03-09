@@ -24,6 +24,10 @@
   font-style: italic;
 }
 
+#content .views-field-title .field-content a {
+	font-size:18px;
+}
+
 #content .view-i-wish .rate-widget-2,
 #content .view-i-planted .rate-widget-1,
 #content .view-recent-stories .rate-widget-1,
@@ -40,19 +44,44 @@
   font-style: italic;
 }
 
-#content .view-i-wish .views-field-comments-link,#content .view-i-wish .views-field-comment-count,
-#content .view-i-planted .views-field-comments-link,#content .view-i-planted .views-field-comment-count, 
-#content .view-recent-stories .views-field-comments-link,#content .view-recent-stories .views-field-comment-count,
-#content .view-most-encouraged .views-field-comments-link,#content .view-most-encouraged .views-field-comment-count {
+#content .view-i-wish .views-field-comment-count {
   position: relative;
-  top: -16px;
+  top: -49px;
   left: 302px;
 }
-#content .view-i-wish .views-field-comment-count,#content .view-i-planted .views-field-comment-count,
-#content .view-recent-stories .views-field-comment-count,
-#content .view-most-encouraged .views-field-comment-count {
-  left: 334px;
+
+#content .view-i-planted .views-field-comment-count, 
+#content .view-recent-stories .views-field-comment-count {
+	position: relative;
+  top: -25px;
+  left: 302px;
 }
+
+#content .view-i-wish .views-field-comments-link {
+  position: relative	;
+  top: -80px;
+  left: 158px;
+}
+
+#content .view-i-planted .views-field-comments-link,
+#content .view-recent-stories .views-field-comments-link {
+	position: relative	;
+  top: -55px;
+  left: 158px;
+}
+
+#content .view-most-encouraged .views-field-comments-link {
+	position: relative	;
+  top: -117px;
+  left: 158px;
+}
+
+#content .view-most-encouraged .views-field-comment-count {
+	position: relative;
+  top: -87px;
+  left: 302px;
+}
+
 #content .view-i-wish .views-field-comments-link,#content .view-i-planted .views-field-comments-link,
 #content .view-recent-stories .views-field-comments-link, 
 #content .view-most-encouraged .views-field-comments-link {
@@ -66,24 +95,45 @@
 
 #content .view-content .views-field-value .field-content {
 	position:relative;
-	bottom:-30px;
+	bottom:2px;
 }
 
 #content .view-content div .views-field-value-1 .field-content .rate-widget-2 {
 	position:relative;
 	top:30px;
-	right:130px;
+	right:5px;
+}
+
+#content .view-i-planted .view-content .views-field-value .field-content a,
+#content .view-recent-stories .view-content .views-field-value .field-content a {
+	position:absolute;
+	bottom:8px;
+	left:110px;
 }
 
 #content .view-content .views-field-value .field-content .rate-widget-2 {
 	position:absolute;
-	top:25px;
-	left:-120px;
+	top:-20px;
+	left:-10px;
 }
 
 #content .view-content .views-field-value-1 .field-content {
 	position:relative;
-	left:130px;
-	bottom:-3px;
+	left:118px;
+	bottom:65px;
+}
+
+#content .view-recent-stories .view-content .views-field-value-1 .field-content,
+#content .view-i-planted .view-content .views-field-value-1 .field-content {
+	top:-4px;
+}
+
+.article-content .rate-widget-1 a #rate-button-2 {
+	float:left;
+}
+
+#content .views-field-comment-link a {
+	position:relative;
+	top:5px;
 }
 

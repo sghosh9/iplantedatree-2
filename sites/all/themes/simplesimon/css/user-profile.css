@@ -20,6 +20,20 @@
 	font-size: 18px;
 }
 
+#content #block-views-my-wishes-and-stories-block .views-field-comment-count span,
+#content #block-views-my-wishes-and-stories-block-1 .views-field-comment-count span {
+	position:relative;
+	top:0.5px;
+}
+
+#content #block-views-my-wishes-and-stories-block .views-field-value div,
+#content #block-views-my-wishes-and-stories-block-1 .views-field-value div {
+	position:relative;
+	bottom:0.5px;
+}
+
 .profile .history {
   padding-top:25%;
 }
+
+

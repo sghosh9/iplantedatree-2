@@ -171,8 +171,9 @@ function simplesimon_preprocess_user_profile(&$variables) {
 }
 
 function simplesimon_system_powered_by() {
-  $image_path1=path_to_theme()."/images/drupal_favicon.png";
-  $image_path2=path_to_theme()."/images/innoraft.jpg";
+	global $base_path;
+  $image_path1=$base_path.path_to_theme()."/images/drupal_favicon.png";
+  $image_path2=$base_path.path_to_theme()."/images/innoraft.jpg";
   
   return '<span>' .
  t(' Powered by <a href="@poweredby" target="_blank">Drupal</a>', array('@poweredby' => 'http://drupal.org')) . 
