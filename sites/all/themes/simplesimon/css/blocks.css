@@ -139,6 +139,7 @@
 #block-menu-menu-about-us li {
 	position:relative;
 	right:120px;
+	list-style:none;
 }
 
 
