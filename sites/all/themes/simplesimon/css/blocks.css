@@ -38,7 +38,7 @@
 }
 
 .sidebar .block-content #user-login-form a{
-	font-size:15px;
+	font-size:12px;
 }
 
 .region-sidebar-first  .block-content{
@@ -139,4 +139,11 @@
 #block-menu-menu-about-us li {
 	position:relative;
 	right:120px;
+}
+
+
+
+#block-user-login .block-content .item-list .rpx-links li div {
+	position:relative;
+	left:120px;
 }
