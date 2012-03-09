@@ -171,19 +171,20 @@ function simplesimon_preprocess_user_profile(&$variables) {
 }
 
 function simplesimon_system_powered_by() {
-  $image_path1=path_to_theme()."/images/drupal_favicon.png";
-  $image_path2=path_to_theme()."/images/innoraft.jpg";
+  global $base_url;
+  $drupal_image_path = $base_url . '/' . path_to_theme() . '/images/drupal_favicon.png';
+  $innoraft_image_path = $base_url . '/' . path_to_theme() . '/images/innoraft.jpg';
   
   return '<span>' .
- t(' Powered by <a href="@poweredby" target="_blank">Drupal</a>', array('@poweredby' => 'http://drupal.org')) . 
+ t('Powered by') . '<a href="http://drupal.org" target="_blank">Drupal</a>' . 
 '</span>
  <span>
 <a href="http://drupal.org" target="_blank">
-<img src="' . $image_path1 . '" alt="IMAGE_DESCRIPTION"></a>.
+<img src="' . $drupal_image_path . '" alt="DRUPAL"></a>
 </span>
 <span>'.
- t(' An <a href="@innoraft" target="_blank">
-<img src="' . $image_path2 . '" alt="IMAGE_DESCRIPTION"></a> Initiative.', array('@innoraft' => 'http://www.innoraft.com/')).
+ t(' An ') . '<a href="http://www.innoraft.com" target="_blank">
+<img src="' . $innoraft_image_path . '" alt="INNORAFT"></a> ' . t('Initiative') .
 '</span>' ;
 }
 

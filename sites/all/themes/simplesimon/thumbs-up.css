@@ -1,26 +1,30 @@
-.rate-thumbs-up-btn-up {
+.rate-thumbs-up-btn-up:link {
   display: inline-block;
-  background: url(../images/before_click_leaf.png) no-repeat 0 0;
-  width: 24px;
+  background: url(../images/before_click_leaf.png) no-repeat 0px 2px;
   height: 24px;
-  text-indent: -999px;
+  text-align:right;
 }
-
+.rate-widget-1 .rate-thumbs-up-btn-up {
+  width: 67px;
+}
+.rate-widget-2 .rate-thumbs-up-btn-up {
+  width: 100px;
+}
 .rate-thumbs-up-btn-up:visited {
-  background: url(../images/after_click_leaf.png) no-repeat 0 0;
+  background: url(../images/after_click_leaf.png) no-repeat 0px 2px;
 }
 
-.rate-thumbs-up-btn-up a.active {
-  background: url(../images/after_click_leaf.png) no-repeat 0 0;
+.rate-thumbs-up-btn-up:active {
+  background: url(../images/after_click_leaf.png) no-repeat 0px 2px;
 }
 
-.rate-thumbs-up-btn-up a.active-trail {
-  background: url(../images/after_click_leaf.png) no-repeat 0 0;
+.rate-thumbs-up-btn-up.active-trail {
+  background: url(../images/after_click_leaf.png) no-repeat 0px 2px;
 }
 
 .rate-thumbs-up-btn-up.active {
-  background: url(../images/after_click_leaf.png) no-repeat 0 0;
+  background: url(../images/after_click_leaf.png) no-repeat 0px 2px;
 }
 
 
-
+	
